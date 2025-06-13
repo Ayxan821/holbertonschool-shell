@@ -1,6 +1,7 @@
-#!/bin/bash
-i=1
-while [ i -le 10]; do
+#!/usr/bin/env bash
+#This is an alternative to print Best School for 10 times
+_=1
+while [ _ -le 10]; do
 	echo "Best School"
-    	i=$((i + 1))
+    	_=$((_ + 1))
 done 
