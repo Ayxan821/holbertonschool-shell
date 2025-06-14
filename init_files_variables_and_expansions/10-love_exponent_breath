@@ -1,2 +1,2 @@
 #!/bin/bash
-awk -v b="$BREATH" -v l="$LOVE" 'BEGIN {print b^l}'
+result=1 count=0 while [ $count -lt $LOVE ] do result=$((result*BREATH)) count=$((count+1)) done echo $result
