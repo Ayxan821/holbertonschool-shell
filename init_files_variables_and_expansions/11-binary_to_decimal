@@ -1,0 +1,14 @@
+#!/bin/bash
+binary=$BINARY
+decimal=0
+len=${#binary}
+pos=0
+
+while [ $pos -lt $len ]
+do
+  digit=${binary:$pos:1}           # İkilik ədəddən bir rəqəm götürürük
+  decimal=$(( decimal * 2 + digit )) # Onluğa çeviririk (ədədi ikiqat artırıb rəqəmi əlavə edirik)
+  pos=$(( pos + 1 ))
+done
+
+echo $decimal
